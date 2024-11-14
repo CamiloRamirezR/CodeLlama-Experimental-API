@@ -25,3 +25,4 @@ tqdm==4.67.0
 transformers==4.46.2
 typing_extensions==4.12.2
 urllib3==2.2.3
+ruff==0.7.2
