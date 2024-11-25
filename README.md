@@ -10,4 +10,11 @@ Disponible en: [_Hugging Face_](https://huggingface.co/codellama)
 ## Notebooks
 Aloja los Notebooks de Jupyter con los ejemplos de uso del modelo para la generación de código en diferentes lenguajes de programación.
 
+## API
 
+### Ejecución en local
+Ejecute el siguiente comando para iniciar la API en local:
+
+```
+flask --app "app:create_app('sqlite:///db.sqlite')" run
+```
