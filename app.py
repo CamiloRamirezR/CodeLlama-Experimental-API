@@ -2,6 +2,7 @@ from flask import Flask
 from environment import DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME
 from containers import Container
 from db import db
+from blueprints import HealthBlueprint
 
 
 class FlaskMicroservice(Flask):
@@ -26,5 +27,6 @@ def create_app(database_uri: str | None = None) -> FlaskMicroservice:
         db.create_all()
 
     # Register the blueprints
+    app.register_blueprint(HealthBlueprint)
 
     return app
