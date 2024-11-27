@@ -16,3 +16,5 @@ class CodeGenerationRepository:
 
     def delete_all(self) -> None:
         raise NotImplementedError  # pragma: no cover
+
+    # Prueba de concepto
